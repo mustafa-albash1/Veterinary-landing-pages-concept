@@ -1,0 +1,342 @@
+header main .text-main p, .vedio-content .content-box p, .major .text-box p, .price-doge p, .doctor .text-box p, .recent-post .text-box p, footer p {
+  font-size: 20px;
+  letter-spacing: 1.2px;
+  line-height: 1.5;
+  margin-right: 1rem;
+}
+
+header .navbar form input, header .navbar form button, header main .contact, .vedio-content .content-box button {
+  border: none !important;
+}
+
+.major .card .card-body .card-title, .price-doge .card .card-body .card-title, .doctor .card .card-body .card-title, .recent-post .card .card-body .card-title, .vedio-content .content-box h2, .major .text-box h2, .price-doge h2, .doctor .text-box h2, .recent-post .text-box h2 {
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.major .card, .price-doge .card, .doctor .card, .recent-post .card {
+  background-color: transparent;
+  border: none;
+}
+
+.major .card .card-body, .price-doge .card .card-body, .doctor .card .card-body, .recent-post .card .card-body {
+  padding: 20px 0px;
+}
+
+.major .card .card-body .card-text, .price-doge .card .card-body .card-text, .doctor .card .card-body .card-text, .recent-post .card .card-body .card-text {
+  margin: 0 10px;
+  letter-spacing: 1px !important;
+  line-height: 1.2;
+  font-size: 18px;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+  background-color: #daac00;
+  color: #ffffff;
+}
+
+header .navbar .navbar-brand img {
+  width: 150px;
+}
+
+header .navbar ul li {
+  padding-left: 1.5rem;
+}
+
+header .navbar ul li a {
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffffff !important;
+}
+
+@media (max-width: 992px) {
+  header .navbar ul li {
+    padding-left: 0px !important;
+  }
+}
+
+header .navbar form input {
+  -webkit-box-shadow: 2px 2px 10px;
+          box-shadow: 2px 2px 10px;
+  background-color: #fcc302 !important;
+  border-radius: initial !important;
+}
+
+header .navbar form input::-webkit-input-placeholder {
+  color: #ffffff !important;
+}
+
+header .navbar form input:-ms-input-placeholder {
+  color: #ffffff !important;
+}
+
+header .navbar form input::-ms-input-placeholder {
+  color: #ffffff !important;
+}
+
+header .navbar form input::placeholder {
+  color: #ffffff !important;
+}
+
+@media (max-width: 576px) {
+  header .navbar form input {
+    width: 200px !important;
+  }
+}
+
+header .navbar form button {
+  background-color: #00bec9 !important;
+  border-radius: initial !important;
+}
+
+header .navbar form button i {
+  color: #ffffff;
+  padding: 5px;
+}
+
+@media (max-width: 576px) {
+  header .navbar form button {
+    width: 50px !important;
+  }
+}
+
+header main .contact {
+  color: #ffffff;
+  background-color: #00bec9;
+}
+
+header main .img-box img {
+  width: 350px;
+}
+
+@media (max-width: 992px) {
+  header main .img-box img {
+    width: 30vw;
+    margin-left: 50%;
+  }
+}
+
+@media (max-width: 576px) {
+  header main .img-box img {
+    width: 40vw;
+    margin-left: 35%;
+  }
+}
+
+.vedio-content .content-box {
+  padding-top: 1.5rem;
+}
+
+.vedio-content .content-box h2 {
+  font-weight: bold;
+}
+
+@media (max-width: 992px) {
+  .vedio-content .content-box {
+    text-align: center;
+  }
+}
+
+.vedio-content .content-box button {
+  color: #ffffff;
+  background-color: #fcc302;
+}
+
+.vedio-content .img-box img {
+  width: 300px;
+}
+
+@media (max-width: 992px) {
+  .vedio-content .img-box img {
+    width: 50vw !important;
+    margin-left: 25%;
+  }
+}
+
+.major {
+  background-color: #fcc302;
+  padding: 50px 0;
+  color: #ffffff;
+}
+
+.major .text-box h2 {
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.major .card img {
+  border: 5px solid #ffffff;
+}
+
+.price-doge {
+  background-color: #fcc302;
+  padding: 50px 0;
+  color: #ffffff;
+}
+
+.price-doge h2 {
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.price-doge .card span {
+  padding: 0 15px;
+  text-decoration: line-through;
+}
+
+@media (max-width: 768px) {
+  .price-doge .card {
+    padding-top: 40px;
+  }
+}
+
+.price-doge .card button {
+  padding: 10px 30px;
+  margin: 5px 0;
+  border-radius: 40px;
+}
+
+.doctor .text-box h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0px;
+}
+
+.doctor .text-box p {
+  font-size: 1.5rem;
+  padding: 10px 0;
+}
+
+.doctor .card .card-body .card-title {
+  font-weight: bold;
+  margin: 0;
+}
+
+.doctor .card .card-body .card-text {
+  font-weight: bold;
+}
+
+.doctor .card .card-body a {
+  margin-top: 20px;
+  background-color: #daac00;
+  padding: 3px 8px;
+  color: #ffffff;
+  border-radius: 50%;
+  margin-bottom: 30px;
+}
+
+.statistics {
+  background-image: url("../image/backgroundIcon.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: 100px 0;
+}
+
+.statistics .content h4 {
+  color: #ffffff;
+}
+
+@media (max-width: 576px) {
+  .statistics .content h4 {
+    margin-bottom: 60px;
+  }
+}
+
+.statistics .content h5 {
+  padding-top: 15px;
+  color: #ffffff;
+}
+
+.statistics::before {
+  content: '';
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(252, 195, 2, 0.7);
+  padding: 100px 0;
+}
+
+.recent-post .card {
+  padding: 0px;
+  -webkit-box-shadow: 5px 5px 20px #ddd;
+          box-shadow: 5px 5px 20px #ddd;
+}
+
+.recent-post .card .card-title {
+  margin-left: 25px;
+  font-size: 24px !important;
+}
+
+.recent-post .card .card-body p {
+  font-size: 14px !important;
+  padding-left: 15px;
+}
+
+.recent-post .card a {
+  margin-left: 25px;
+}
+
+@media (max-width: 992px) {
+  .recent-post .card {
+    margin-top: 50px;
+  }
+}
+
+footer {
+  padding: 100px 0;
+  background-color: #343434;
+  color: #ffffff;
+}
+
+footer ul li {
+  font-size: 18px;
+  padding-top: 5px;
+}
+
+footer p {
+  font-size: 16px;
+}
+
+footer input {
+  border: none !important;
+  background-color: #fcc302 !important;
+  border-radius: initial !important;
+  padding: 10px 30px;
+}
+
+footer .fa-telegram-plane {
+  background-color: #00bec9 !important;
+  color: #ffffff;
+  padding: 15px 40px;
+  font-size: 22px;
+}
+
+footer .social a {
+  margin: 40px 10px 0 10px;
+  background-color: #ffffff;
+  padding: 6px 8px;
+  border-radius: 50%;
+}
+
+footer .social a i {
+  font-size: 24px;
+  color: #313243;
+}
+
+@media (max-width: 786px) {
+  footer .content {
+    margin-top: 40px;
+    text-align: center !important;
+    -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+            justify-content: flex-start !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,366 @@
+$mainColor: #fcc302;
+$secondColor: #00bec9;
+$thirdColor: #daac00;
+$mainTextColor: #313243;
+$secondTextColor: #ffffff;
+
+%par {
+  font-size: 20px;
+  letter-spacing: 1.2px;
+  line-height: 1.5;
+  margin-right: 1rem;
+}
+
+%btn {
+  border: none !important;
+}
+
+%h2 {
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+%card {
+  background-color: transparent;
+  border: none;
+  .card-body {
+    padding: 20px 0px;
+    .card-title {
+      @extend %h2;
+    }
+    .card-text {
+      margin: 0 10px;
+      letter-spacing: 1px !important;
+      line-height: 1.2;
+      font-size: 18px;
+    }
+  }
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+// Start Header Section
+header {
+    
+  background-color: $thirdColor;
+  color: $secondTextColor;
+  .navbar {
+    .navbar-brand {
+      img {
+        width: 150px;
+      }
+    }
+    ul {
+      li {
+        padding-left: 1.5rem;
+        a {
+          font-size: 20px;
+          font-weight: 600;
+          color: $secondTextColor !important;
+        }
+        @media (max-width: 992px) {
+          padding-left: 0px !important;
+        }
+      }
+    }
+    form {
+      input {
+        box-shadow: 2px 2px 10px;
+        background-color: $mainColor !important;
+        @extend %btn;
+        border-radius: initial !important;
+        &::placeholder {
+          color: $secondTextColor !important;
+        }
+        @media (max-width: 576px) {
+          width: 200px !important;
+        }
+      }
+
+      button {
+        background-color: $secondColor !important;
+        @extend %btn;
+        border-radius: initial !important;
+        i {
+          color: $secondTextColor;
+          padding: 5px;
+        }
+        @media (max-width: 576px) {
+          width: 50px !important;
+        }
+      }
+    }
+  }
+  main {
+    .text-main {
+      p {
+        @extend %par;
+      }
+    }
+    .contact {
+      color: $secondTextColor;
+      background-color: $secondColor;
+      @extend %btn;
+    }
+    .img-box {
+      img {
+        width: 350px;
+        @media (max-width: 992px) {
+          width: 30vw;
+          margin-left: 50%;
+        }
+        @media (max-width: 576px) {
+          width: 40vw;
+          margin-left: 35%;
+        }
+      }
+    }
+  }
+}
+// End Header Section
+
+// Start vedio Section
+.vedio-content {
+  .content-box {
+    padding-top: 1.5rem;
+    h2 {
+      @extend %h2;
+      font-weight: bold;
+    }
+    p {
+      @extend %par;
+    }
+    @media (max-width: 992px) {
+      text-align: center;
+    }
+    button {
+      color: $secondTextColor;
+      @extend %btn;
+      background-color: $mainColor;
+    }
+  }
+  .img-box {
+    img {
+      width: 300px;
+      @media (max-width: 992px) {
+        width: 50vw !important;
+        margin-left: 25%;
+      }
+    }
+  }
+}
+// End Vedio Section
+
+// Start Major Section
+.major {
+  background-color: $mainColor;
+  padding: 50px 0;
+  color: $secondTextColor;
+  .text-box {
+    h2 {
+      @extend %h2;
+      font-weight: bold;
+      font-size: 3rem;
+    }
+    p {
+      @extend %par;
+    }
+  }
+  .card {
+    @extend %card;
+    img {
+      border: 5px solid $secondTextColor;
+      @media (max-width: 786px) {
+      }
+    }
+  }
+}
+// End Major Section
+
+// Start Doges Price 
+.price-doge {
+  background-color: $mainColor;
+  padding: 50px 0;
+  color: $secondTextColor;
+  h2 {
+    @extend %h2;
+    font-weight: bold;
+    font-size: 3rem;
+  }
+  p {
+    @extend %par;
+  }
+  .card {
+    @extend %card;
+    span {
+      padding: 0 15px;
+      text-decoration: line-through;
+    }
+    @media (max-width: 768px) {
+      padding-top: 40px;
+    }
+    button {
+      padding: 10px 30px;
+      margin: 5px 0;
+      border-radius: 40px;
+    }
+  }
+}
+// End Doges Price
+
+// Start Doctor Section
+.doctor {
+  .text-box {
+    h2 {
+      @extend %h2;
+      font-size: 3rem;
+      font-weight: bold;
+      margin: 0px;
+    }
+    p {
+      @extend %par;
+      font-size: 1.5rem;
+      padding: 10px 0;
+    }
+  }
+  .card {
+    @extend %card;
+    .card-body {
+      .card-title {
+        font-weight: bold;
+        margin: 0;
+      }
+      .card-text {
+        font-weight: bold;
+      }
+      a {
+        margin-top: 20px;
+        background-color: $thirdColor;
+        padding: 3px 8px;
+        color: $secondTextColor;
+        border-radius: 50%;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+// End Doctor Section
+
+// Start Statistics Section
+.statistics {
+background-image: url('../image/backgroundIcon.jpg');
+background-size: cover;
+background-position: center;
+position: relative;
+padding: 100px 0;
+  .content {
+    
+    h4 {
+      color: $secondTextColor;
+      @media (max-width: 576px) {
+        margin-bottom: 60px;
+      }
+    }
+    h5 {
+      padding-top: 15px;
+      color: $secondTextColor;
+    }
+  }
+  &::before{
+    content: '';
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color: $mainColor, $alpha: 0.7);
+    padding: 100px 0;
+  }
+}
+// End Statistics Section
+
+// Start Post Section
+.recent-post {
+  .text-box {
+    h2 {
+      @extend %h2;
+    }
+    p {
+      @extend %par;
+    }
+  }
+  .card {
+    .card-title {
+      margin-left: 25px;
+      font-size: 24px !important;
+    }
+    .card-body {
+      p {
+        font-size: 14px !important;
+        padding-left: 15px;
+      }
+    }
+    a {
+      margin-left: 25px;
+    }
+
+    @extend %card;
+    padding: 0px;
+    box-shadow: 5px 5px 20px #ddd;
+    @media (max-width: 992px) {
+      margin-top: 50px;
+    }
+  }
+}
+// End Post Section
+
+// Start Footer
+footer {
+  padding: 100px 0;
+  background-color: #343434;
+  color: $secondTextColor;
+  ul {
+    li {
+      font-size: 18px;
+      padding-top: 5px;
+    }
+  }
+  p {
+    @extend %par;
+    font-size: 16px;
+  }
+  input {
+    border: none !important;
+    background-color: #fcc302 !important;
+    border-radius: initial !important;
+    padding: 10px 30px;
+  }
+  .fa-telegram-plane {
+    background-color: #00bec9 !important;
+    color: #ffffff;
+    padding: 15px 40px;
+    font-size: 22px;
+  }
+  .social {
+    a {
+      margin: 40px 10px 0 10px;
+      background-color: $secondTextColor;
+      padding: 6px 8px;
+      border-radius: 50%;
+      i {
+        font-size: 24px;
+        color: $mainTextColor;
+      }
+    }
+  }
+  .content {
+    @media (max-width: 786px) {
+      margin-top: 40px;
+      text-align: center !important;
+      justify-content: flex-start !important;
+    }
+  }
+}
+// End Footer
